@@ -1,0 +1,178 @@
+w7@w7-PC MINGW64 ~
+$ ls
+ aa/                    'Datos de programa'@   Favorites/              'Menú Inicio'@
+ AppData/                Desktop/              Impresoras@             'Mis documentos'@
+'Configuración local'@   Documents/            index.html               Music/
+ Contacts/               Downloads/            IntelGraphicsProfiles/   new/
+ Cookies@               'Entorno de red'@      Links/                   NTUSER.DAT
+
+w7@w7-PC MINGW64 ~
+$ pwd
+/c/Users/w7
+
+w7@w7-PC MINGW64 ~
+$ ls
+ aa/                    'Datos de programa'@   Favorites/              'Menú Inicio'@
+ AppData/                Desktop/              Impresoras@             'Mis documentos'@
+'Configuración local'@   Documents/            index.html               Music/
+ Contacts/               Downloads/            IntelGraphicsProfiles/   new/
+ Cookies@               'Entorno de red'@      Links/                   NTUSER.DAT
+
+w7@w7-PC MINGW64 ~
+$ mkdir nuevo
+
+w7@w7-PC MINGW64 ~
+$ ls
+ aa/                    'Datos de programa'@   Favorites/              'Menú Inicio'@
+ AppData/                Desktop/              Impresoras@             'Mis documentos'@
+'Configuración local'@   Documents/            index.html               Music/
+ Contacts/               Downloads/            IntelGraphicsProfiles/   new/
+ Cookies@               'Entorno de red'@      Links/                   NTUSER.DAT
+
+w7@w7-PC MINGW64 ~
+$ cd nuevo
+
+w7@w7-PC MINGW64 ~/nuevo
+$ pwd
+/c/Users/w7/nuevo
+
+w7@w7-PC MINGW64 ~/nuevo
+$ ls
+
+w7@w7-PC MINGW64 ~/nuevo
+$ touch atxt
+
+w7@w7-PC MINGW64 ~/nuevo
+$ ls
+atxt
+
+w7@w7-PC MINGW64 ~/nuevo
+$ rm atxt
+
+w7@w7-PC MINGW64 ~/nuevo
+$ ls
+
+w7@w7-PC MINGW64 ~/nuevo
+$ pwb
+bash: pwb: command not found
+
+w7@w7-PC MINGW64 ~/nuevo
+$ pwd
+/c/Users/w7/nuevo
+
+w7@w7-PC MINGW64 ~/nuevo
+$ cd ..
+
+w7@w7-PC MINGW64 ~
+$ pwd
+/c/Users/w7
+
+w7@w7-PC MINGW64 ~
+$ rm -rf nuevo
+
+w7@w7-PC MINGW64 ~
+$ ls
+ aa/                    'Datos de programa'@   Favorites/              'Menú Inicio'@
+ AppData/                Desktop/              Impresoras@             'Mis documentos'@
+'Configuración local'@   Documents/            index.html               Music/
+ Contacts/               Downloads/            IntelGraphicsProfiles/   new/
+ Cookies@               'Entorno de red'@      Links/                   NTUSER.DAT
+
+w7@w7-PC MINGW64 ~
+$ git clone https://github.com/fiorevalespi/curso-web-elche.git
+Cloning into 'curso-web-elche'...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+w7@w7-PC MINGW64 ~
+$ ls
+ aa/                     Desktop/           IntelGraphicsProfiles/   ntuser.dat.LOG1
+ AppData/                Documents/         Links/                   ntuser.dat.LOG2
+'Configuración local'@   Downloads/        'Menú Inicio'@            NTUSER.DAT{016888bd-
+ Contacts/              'Entorno de red'@  'Mis documentos'@         NTUSER.DAT{016888bd-
+ Cookies@                Favorites/         Music/                   NTUSER.DAT{016888bd-
+ curso-web-elche/        Impresoras@        new/                     ntuser.ini
+'Datos de programa'@     index.html         NTUSER.DAT               Pictures/
+
+w7@w7-PC MINGW64 ~
+$ cd curso-web-elche
+
+w7@w7-PC MINGW64 ~/curso-web-elche (master)
+$ ls
+README.md
+
+w7@w7-PC MINGW64 ~/curso-web-elche (master)
+$ touch index.html
+
+w7@w7-PC MINGW64 ~/curso-web-elche (master)
+$ ls
+index.html  README.md
+
+w7@w7-PC MINGW64 ~/curso-web-elche (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+w7@w7-PC MINGW64 ~/curso-web-elche (master)
+$ git add index.html
+
+w7@w7-PC MINGW64 ~/curso-web-elche (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   index.html
+
+
+w7@w7-PC MINGW64 ~/curso-web-elche (master)
+$ git commit -m "creacion de un fichero index.html"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'w7@w7-PC.(none)')
+
+w7@w7-PC MINGW64 ~/curso-web-elche (master)
+$ git config user.email "fiorevalespi@gmail.com"
+
+w7@w7-PC MINGW64 ~/curso-web-elche (master)
+$ git config user.name "fiorvalespi"
+
+w7@w7-PC MINGW64 ~/curso-web-elche (master)
+$ git commit -m "creacion de un fichero index.html"
+[master 534644a] creacion de un fichero index.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+w7@w7-PC MINGW64 ~/curso-web-elche (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 292 bytes | 292.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/fiorevalespi/curso-web-elche.git
+   b7837fb..534644a  master -> master
+
+w7@w7-PC MINGW64 ~/curso-web-elche (master)
+$
